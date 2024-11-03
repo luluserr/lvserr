@@ -1,6 +1,5 @@
 # Boutique d'Ciel
 Proyecto Integrador para el curso Front End con JavaScript de Talento Tech 2024.
-Se trata de una página web que por el momento se compone de un documento HTML y un archivo de estilos CSS.
 ## Características:
 Actualmente el proyecto cuenta con lo siguiente:
 + Estructura HTML básica que utiliza etiquetas semánticas
