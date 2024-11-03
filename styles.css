@@ -1,0 +1,471 @@
+/* fuentes importadas de Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Bentham&family=Croissant+One&family=Miss+Fajardose&family=Outfit&display=swap');
+
+/* estilización del esqueleto */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body {
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+
+/* main */
+
+main {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+/* estilización de headings */
+
+h1, h2 {
+    color:#4A2E2B;
+    font-family: 'Croissant One';
+    text-align: center;
+}
+
+h3 {
+    color:#4A2E2B;
+    font-family: 'Croissant One';
+    text-align: center;
+}
+
+h2 a {
+    color: #795551;
+    transition: text-shadow 0.3s ease;
+}
+
+h2 a:hover {
+    color: #E33F65;
+    text-shadow: 1px 1px 15px #ff7575;
+}
+
+/* estilización miscelánea */
+
+p {
+    color: #4A2E2B;
+    font-family: 'Bentham';
+    font-size: 20px;
+}
+
+hr {
+    margin: 5px 0;
+    border: none;
+    border-top: 2px solid #b9a7a5;
+}
+
+/* imágenes para index.html */
+
+.index {
+    padding: 20px;
+    text-align: center;
+}
+
+.index p {
+    padding: 15px 0;
+}
+
+.index-imagenes {
+    gap: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.index-imagen {
+    width: 25%;
+    height: auto;
+    border-radius: 15px;
+    opacity: 0.8;
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+.index-imagen:hover {
+    background-color: #dfc19a;
+    opacity: 1;
+    box-shadow: 0 0 10px #d8ac89;
+}
+
+/* header */
+
+header {
+    padding: 20px 0;
+    position: sticky;
+    background-color: #F4D3D8;
+    background-image: url(bg.jpg);
+    background-blend-mode: color-burn;
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+/* contenedor-header y nombre del shop */
+
+.contenedor-header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-header img {
+    height: auto;
+}
+
+.marca {
+    color: #E33F65;
+    font-family: 'Miss Fajardose';
+    font-size: 95px;
+    transition: text-shadow 0.3s ease;
+}
+
+.marca:hover {
+    text-shadow: 1px 1px 15px #ff7575;
+}
+
+/* barra de navegación */
+
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #cf4968;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: 'Croissant One';
+    font-size: 20px;
+    text-align: center;
+}
+
+nav li a {
+    padding: 12px;
+    color: #f5c76d;
+    text-align: center;
+    transition-duration: 0.6s;
+}
+
+nav li a:hover {
+    color: #795551;
+    background-color: #fac0ca;
+}
+
+/* estilización de hipervínculos general */
+
+a {
+    text-decoration: none;
+}
+
+/* estilización de sección general */
+
+section {
+    margin: 0px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #fffff3;
+}
+
+section p {
+    text-align: center;
+}
+
+section a {
+    margin: 5px;
+    color: #795551;
+    transition: color 0.2s;
+}
+
+section a:hover {
+    color: #E33F65;
+    text-shadow: 1px 1px 5px #ff7575;
+}
+
+/* contenedor para shop.html */
+
+.contenedor-productos {
+    margin: 0 auto;
+    gap: 1.5px;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ítems dentro del contenedor */
+
+.producto {
+    margin: 3px;
+    padding: 20px;
+    background-color: #F4D0D2;
+    border-radius: 15px;
+    align-items: center;
+    flex: 1 1 calc(33.333% - 20px);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, border 0.5s ease;
+}
+
+.producto h2 {
+    font-family: 'Miss Fajardose';
+    font-size: 60px;
+    font-weight: 500;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.producto:hover {
+    background-color: #eed9be;
+    transform: scale(1.010);
+    text-shadow: 1px 1px 10px #4A2E2B;
+}
+
+.producto:hover h2 {
+    color: #ffffff;
+    transform: scale(1.050);
+}
+
+.producto img {
+    padding: 5px;
+    width: 250px;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover img {
+    background-color: #dfc19a;
+    opacity: 1;
+    box-shadow: 0 0 5px #d8ac89;
+}
+
+/* contenedor para calificaciones.html */
+
+.contenedor-opiniones {
+    margin: 0 auto;
+    padding: 10px;
+    gap: 5.5px;
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* ítems dentro del contenedor */
+
+.opinion {
+    margin: 3px;
+    padding: 20px;
+    background-color: #F4D0D2;
+    border-radius: 15px;
+    text-align: center;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.opinion:hover {
+    background-color: #dfc19a;
+    color: #ffffff;
+    transform: scale(1.015);
+    text-shadow: 1px 1px 5px #4A2E2B;
+}
+
+.opinion p {
+    font-family: 'Outfit';
+    font-size: 16px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.opinion:hover p {
+    color: #ffffff;
+}
+
+.opinion:hover hr {
+    border-color: #ffffff;
+}
+
+/* footer */
+
+footer {
+    padding: 20px 0;
+    position: relative;
+    margin-top: auto;
+    background-color: #F4D3D8;
+    background-image: url(bg.jpg);
+    background-blend-mode: color-burn;
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #4A2E2B;
+    font-family: 'Bentham';
+    text-align: center;
+}
+
+/* barra dentro del footer */
+
+.barra-footer {
+    padding: 5px;
+    position: relative;
+    background-color: #cf4968;
+}
+
+.barra-footer p {
+    color: #f5c76d;
+    transition: text-shadow 0.3s;
+}
+
+.barra-footer:hover p {
+    text-shadow: 1px 1px 5px #851e36;
+}
+
+/* contenedor para el footer */
+
+.redes-sociales {
+    margin-top: 5px;
+    font-family: 'Outfit';
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociales a {
+    margin: 5px;
+    color: #4A2E2B;
+    transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+    color: #E33F65;
+    text-shadow: 1px 1px 5px #ff7575;
+}
+
+/* mapa para contacto.html */
+
+.mapa-boutique {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa-boutique p {
+    padding: 15px;
+    color: #4A2E2B;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.mapa-boutique p:hover {
+    color: #E33F65;
+    text-shadow: 1px 1px 10px #ff7575;
+}
+
+.mapa-boutique iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: 0;
+    transition: height 0.5s ease;
+}
+
+/* formulario para contacto.html */
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #F4D0D2;
+    border-radius: 5px;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+    color: #4A2E2B;
+    font-family: 'Outfit';
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #C5A9A2;
+    border-radius: 5px;
+    font-family: 'Outfit';
+    font-size: 16px;
+}
+
+button {
+    margin: auto;
+    padding: 10px 20px;
+    display: block;
+    background-color: #E33F65;
+    border: none;
+    border-radius: 25px;
+    color: #f5c76d;
+    font-family: 'Outfit';
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    color: #795551;
+    background-color: #dfc19a;
+}
+
+/* media queries */
+
+@media (max-width: 600px) {
+    .marca {
+    font-size: 60px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+        display: inline;
+    }
+
+    .contenedor-opinions {
+        grid-template-columns: 1fr;
+    }
+
+    .mapa-boutique iframe {
+        height: 250px;
+    }
+
+    .redes-sociales a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
