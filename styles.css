@@ -14,6 +14,7 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    background-color: #fffff3;
 }
 
 body {
@@ -219,8 +220,7 @@ section a:hover {
     flex-wrap: wrap;
 }
 
-/* ítems dentro del contenedor */
-
+/* ítems dentro del contenedor (productos) */
 .producto {
     margin: 3px;
     padding: 20px;
@@ -241,7 +241,7 @@ section a:hover {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.producto:hover {
+.contenedor-productos .producto:hover {
     background-color: #eed9be;
     transform: scale(1.010);
     text-shadow: 1px 1px 10px #4A2E2B;
@@ -262,10 +262,91 @@ section a:hover {
     transition: opacity 0.3s ease, box-shadow 0.3s ease;
 }
 
-.producto:hover img {
+.contenedor-productos .producto:hover img {
     background-color: #dfc19a;
     opacity: 1;
     box-shadow: 0 0 5px #d8ac89;
+}
+
+.contenedor-productos .producto button {
+    padding: 12px;
+    background-color: #ffe3e7;
+    color: #795551;
+    text-align: center;
+    font-weight: bold;
+    transition-duration: 0.6s;
+}
+
+.contenedor-productos .producto button:hover {
+    color: #493432;
+    background-color: #fac0ca;
+}
+
+/* contenedor para carrito.html */
+
+.contenedor-carrito {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffff3;
+    text-align: center;
+}
+
+.contenedor-carrito .producto {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contenedor-carrito .producto:hover {
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-shadow: 1px 1px 10px #f75190;
+}
+
+.contenedor-carrito .producto img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenedor-carrito .producto:hover img {
+    opacity: 1;
+}
+
+.contenedor-carrito .producto h3 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.contenedor-carrito .producto p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.contenedor-carrito .producto button {
+    padding: 12px;
+    background-color: #ffe3e7;
+    color: #795551;
+    text-align: center;
+    transition-duration: 0.6s;
+}
+
+.contenedor-carrito .producto button:hover {
+    color: #f3b7b0;
+    background-color: #741726;
+}
+
+.contenedor-carrito a {
+    margin: 5px;
+    color: #795551;
+    transition: color 0.2s;
+}
+
+.contenedor-carrito a:hover {
+    color: #E33F65;
+    text-shadow: 1px 1px 5px #ff7575;
 }
 
 /* contenedor para calificaciones.html */
